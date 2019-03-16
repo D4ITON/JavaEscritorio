@@ -125,7 +125,7 @@ public class frmLogin extends javax.swing.JFrame {
         Datos misDatos = new Datos();
         if(!misDatos.validarUsuario(txtUsuario.getText(), 
                 new String(txtContrasena.getPassword()))){
-            JOptionPane.showMessageDialog(rootPane, "Usuario o clave incorrectos");
+            JOptionPane.showMessageDialog(rootPane, "Usuario o clave incorrectos");//muestra ventana de error
             txtUsuario.setText("");
             txtContrasena.setText("");
             txtUsuario.requestFocusInWindow(); //apunta autofocus al usuario
