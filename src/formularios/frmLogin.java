@@ -5,6 +5,10 @@
  */
 package formularios;
 
+import clases.Datos;
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author D4ITON
@@ -118,6 +122,20 @@ public class frmLogin extends javax.swing.JFrame {
     }//GEN-LAST:event_btnCancelarActionPerformed
 
     private void btnEntrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEntrarActionPerformed
+        Datos misDatos = new Datos();
+        if(!misDatos.validarUsuario(txtUsuario.getText(), 
+                new String(txtContrasena.getPassword()))){
+            JOptionPane.showMessageDialog(rootPane, "Usuario o clave incorrectos");
+            txtUsuario.setText("");
+            txtContrasena.setText("");
+            txtUsuario.requestFocusInWindow(); //apunta autofocus al usuario
+            return;
+        }//en el caso de que el login sea correcto
+        this.dispose(); //ocultamos el menu del login
+        frmPrincipal miPrincipal = new frmPrincipal();
+        miPrincipal.setExtendedState(JFrame.MAXIMIZED_BOTH); //agranda la pantalla
+        miPrincipal.setLocationRelativeTo(null);
+        miPrincipal.setVisible(true);
         
     }//GEN-LAST:event_btnEntrarActionPerformed
 
