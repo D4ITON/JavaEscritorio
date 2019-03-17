@@ -11,5 +11,4 @@ public class JavaEscritorio {
         miLogin.setLocationRelativeTo(null);
         miLogin.setVisible(true);
     }
-    
 }

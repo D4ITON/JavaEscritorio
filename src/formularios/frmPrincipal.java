@@ -27,22 +27,105 @@ public class frmPrincipal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jMenuBar1 = new javax.swing.JMenuBar();
+        mnuArchivo = new javax.swing.JMenu();
+        mnuArchivoClientes = new javax.swing.JMenuItem();
+        mnuArchivoProductos = new javax.swing.JMenuItem();
+        mnuArchivoUsuarios = new javax.swing.JMenuItem();
+        jSeparator1 = new javax.swing.JPopupMenu.Separator();
+        mnuArchivoCambioClave = new javax.swing.JMenuItem();
+        mnuArchivoCambioUsuario = new javax.swing.JMenuItem();
+        jSeparator2 = new javax.swing.JPopupMenu.Separator();
+        mnuArchivoSalir = new javax.swing.JMenuItem();
+        mnuMovimientos = new javax.swing.JMenu();
+        mnuMovimientosNuevaFactura = new javax.swing.JMenuItem();
+        mnuMovimientosReporteFacturas = new javax.swing.JMenuItem();
+        mnuAyuda = new javax.swing.JMenu();
+        mnuAyudaAcercaDe = new javax.swing.JMenuItem();
+        mnuAyudaAyuda = new javax.swing.JMenuItem();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Sistema de Facturación");
+
+        mnuArchivo.setText("Archivo");
+
+        mnuArchivoClientes.setText("Clientes");
+        mnuArchivoClientes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mnuArchivoClientesActionPerformed(evt);
+            }
+        });
+        mnuArchivo.add(mnuArchivoClientes);
+
+        mnuArchivoProductos.setText("Productos");
+        mnuArchivo.add(mnuArchivoProductos);
+
+        mnuArchivoUsuarios.setText("Usuarios");
+        mnuArchivo.add(mnuArchivoUsuarios);
+        mnuArchivo.add(jSeparator1);
+
+        mnuArchivoCambioClave.setText("Cambio Clave");
+        mnuArchivo.add(mnuArchivoCambioClave);
+
+        mnuArchivoCambioUsuario.setText("Cambio Usuario");
+        mnuArchivo.add(mnuArchivoCambioUsuario);
+        mnuArchivo.add(jSeparator2);
+
+        mnuArchivoSalir.setText("Salir");
+        mnuArchivoSalir.setActionCommand("Salir");
+        mnuArchivoSalir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mnuArchivoSalirActionPerformed(evt);
+            }
+        });
+        mnuArchivo.add(mnuArchivoSalir);
+
+        jMenuBar1.add(mnuArchivo);
+
+        mnuMovimientos.setText("Movimientos");
+
+        mnuMovimientosNuevaFactura.setText("Nueva Factura");
+        mnuMovimientos.add(mnuMovimientosNuevaFactura);
+
+        mnuMovimientosReporteFacturas.setText("Reporte Facturas");
+        mnuMovimientos.add(mnuMovimientosReporteFacturas);
+
+        jMenuBar1.add(mnuMovimientos);
+
+        mnuAyuda.setText("Ayuda");
+
+        mnuAyudaAcercaDe.setText("Acerca de");
+        mnuAyuda.add(mnuAyudaAcercaDe);
+
+        mnuAyudaAyuda.setText("Ayuda");
+        mnuAyuda.add(mnuAyudaAyuda);
+
+        jMenuBar1.add(mnuAyuda);
+
+        setJMenuBar(jMenuBar1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGap(0, 738, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGap(0, 417, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void mnuArchivoClientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuArchivoClientesActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_mnuArchivoClientesActionPerformed
+
+    private void mnuArchivoSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuArchivoSalirActionPerformed
+        // TODO add your handling code here:
+        
+    }//GEN-LAST:event_mnuArchivoSalirActionPerformed
 
     /**
      * @param args the command line arguments
@@ -80,5 +163,21 @@ public class frmPrincipal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JPopupMenu.Separator jSeparator1;
+    private javax.swing.JPopupMenu.Separator jSeparator2;
+    private javax.swing.JMenu mnuArchivo;
+    private javax.swing.JMenuItem mnuArchivoCambioClave;
+    private javax.swing.JMenuItem mnuArchivoCambioUsuario;
+    private javax.swing.JMenuItem mnuArchivoClientes;
+    private javax.swing.JMenuItem mnuArchivoProductos;
+    private javax.swing.JMenuItem mnuArchivoSalir;
+    private javax.swing.JMenuItem mnuArchivoUsuarios;
+    private javax.swing.JMenu mnuAyuda;
+    private javax.swing.JMenuItem mnuAyudaAcercaDe;
+    private javax.swing.JMenuItem mnuAyudaAyuda;
+    private javax.swing.JMenu mnuMovimientos;
+    private javax.swing.JMenuItem mnuMovimientosNuevaFactura;
+    private javax.swing.JMenuItem mnuMovimientosReporteFacturas;
     // End of variables declaration//GEN-END:variables
 }
