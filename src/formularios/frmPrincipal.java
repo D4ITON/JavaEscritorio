@@ -124,7 +124,7 @@ public class frmPrincipal extends javax.swing.JFrame {
 
     private void mnuArchivoSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuArchivoSalirActionPerformed
         // TODO add your handling code here:
-        
+        System.exit(0); //cierra el programa
     }//GEN-LAST:event_mnuArchivoSalirActionPerformed
 
     /**
