@@ -74,6 +74,7 @@ public class frmPrincipal extends javax.swing.JFrame {
         mnuArchivoProductos.setText("Productos");
         mnuArchivo.add(mnuArchivoProductos);
 
+        mnuArchivoUsuarios.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/first.png"))); // NOI18N
         mnuArchivoUsuarios.setText("Usuarios");
         mnuArchivoUsuarios.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
