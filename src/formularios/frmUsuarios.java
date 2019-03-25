@@ -106,6 +106,11 @@ public class frmUsuarios extends javax.swing.JInternalFrame {
         });
 
         btnEdit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/edit.png"))); // NOI18N
+        btnEdit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEditActionPerformed(evt);
+            }
+        });
 
         btnDelete.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/delete.png"))); // NOI18N
 
@@ -326,6 +331,31 @@ public class frmUsuarios extends javax.swing.JInternalFrame {
         txtConfirmacion.setText("");
         cmbPerfil.setSelectedIndex(0);
     }//GEN-LAST:event_btnCancelActionPerformed
+
+    private void btnEditActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEditActionPerformed
+        // desabilitacion de botones
+        btnFirst.setEnabled(false);
+        btnPrev.setEnabled(false);
+        btnNext.setEnabled(false);
+        btnLast.setEnabled(false);
+        btnEdit.setEnabled(false);
+        btnDelete.setEnabled(false);
+        btnFind.setEnabled(false);
+        btnNew.setEnabled(false);
+        //habilitaciones
+        btnSave.setEnabled(true);
+        btnCancel.setEnabled(true);
+        
+        // habilitacion de campos
+        txtIDUsuario.setEnabled(false);
+        txtNombres.setEnabled(true);
+        txtApellidos.setEnabled(true);
+        txtClave.setEnabled(true);
+        txtConfirmacion.setEnabled(true);
+        cmbPerfil.setEnabled(true);
+        
+        txtNombres.requestFocusInWindow();
+    }//GEN-LAST:event_btnEditActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
